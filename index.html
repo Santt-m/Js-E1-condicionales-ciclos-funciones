@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>E1: Condicionales, Ciclos y Funciones</title>
+</head>
+
+<body>
+    <header>
+        <a class="headerLogo" href="./index.html" title="ir a inicio"><img src="./assets/header/logo.jpeg"
+                alt="logo del comercio"></a>
+        <div class="btn-nav">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav>
+            <a href="#Hero" title="Inicio">Inicio</a>
+        </nav>
+    </header>
+    <main>
+        <section id="Hero">
+            <h1>Ejercicios de Javascript</h1>
+            <P>By Santiago Maruottolo</P>
+            <ol>
+                <li><a href="#sec1">1- </a>Crear una función que reciba un número por parámetro e indique en consola si el número es paroimpar.</li>
+                <li><a href="#sec2">2- </a>Crear una función que reciba dos números por parámetro e indique en consola que número es mayor, y si ninguno lo es, indicar por consola que son iguales.</li>
+                <li><a href="#sec3">3- </a>Crear una función que reciba un número por parámetro e indique en consola si ese número es múltiplode 5.</li>
+                <li><a href="#sec4">4- </a>Crear una función que reciba un número por parámetro e imprima por consola todos los números desde el 0 hasta llegar a ese número.</li>
+                <li><a href="#sec5">5 - </a>Crear una función que reciba una palabra y un número por parámetro e imprima por consola esa palabra la cantidad correspondiente al número indicado.</li>
+                <li><a href="#sec6">6 - </a>Crear una función que reciba un array por parámetro e imprima por consola todos los valores de ese array.</li>
+                <li><a href="#sec7">7 - </a>Crear una función que reciba un array con 10 números e imprima por consola todos los valores de ese array, menos el que se encuentre en la 5ta posición del mismo. Ayuda: Recuerden que el primer índice de un array es "0".</li>
+                <li><a href="#sec8">8 - </a>Crea una función que reciba un array de números y un número por parámetro e imprima por consola cada número del array multiplicado por el número pasado por parámetro.</li>
+            </ol>
+        </section>
+        <section id="sec1" class="Ejercicios">
+            <h2>1 - Crear una función que reciba un número por parámetro e indique en consola si el número es par o impar.</h2>
+            <input type="number" id="numero1" placeholder="Introduce un número">
+            <button onclick="verificarParidad()">Verificar</button>
+        </section>
+    
+        <section id="sec2" class="Ejercicios">
+            <h2>2 - Crear una función que reciba dos números por parámetro e indique en consola qué número es mayor, y si ninguno lo es, indicar por consola que son iguales.</h2>
+            <input type="number" id="numero2_1" placeholder="Introduce el primer número">
+            <input type="number" id="numero2_2" placeholder="Introduce el segundo número">
+            <button onclick="compararNumeros()">Comparar</button>
+        </section>
+    
+        <section id="sec3" class="Ejercicios">
+            <h2>3 - Crear una función que reciba un número por parámetro e indique en consola si ese número es múltiplo de 5.</h2>
+            <input type="number" id="numero3" placeholder="Introduce un número">
+            <button onclick="esMultiploDeCinco()">Verificar</button>
+        </section>
+    
+        <section id="sec4" class="Ejercicios">
+            <h2>4 - Crear una función que reciba un número por parámetro e imprima por consola todos los números desde el 0 hasta llegar a ese número.</h2>
+            <input type="number" id="numero4" placeholder="Introduce un número">
+            <button onclick="imprimirHasta()">Imprimir</button>
+        </section>
+    
+        <section id="sec5" class="Ejercicios">
+            <h2>5 - Crear una función que reciba una palabra y un número por parámetro e imprima por consola esa palabra la cantidad correspondiente al número indicado.</h2>
+            <input type="text" id="palabra" placeholder="Introduce una palabra">
+            <input type="number" id="cantidad" placeholder="Introduce una cantidad">
+            <button onclick="imprimirPalabra()">Imprimir</button>
+        </section>
+    
+        <section id="sec6" class="Ejercicios">
+            <h2>6 - Crear una función que reciba un array por parámetro e imprima por consola todos los valores de ese array.</h2>
+            <input type="text" id="array6" placeholder="Introduce un array (valores separados por coma)">
+            <button onclick="imprimirArray()">Imprimir</button>
+        </section>
+    
+        <section id="sec7" class="Ejercicios">
+            <h2>7 - Crear una función que reciba un array con 10 números e imprima por consola todos los valores de ese array, menos el que se encuentre en la 5ta posición del mismo.</h2>
+            <input type="text" id="array7" placeholder="Introduce un array de 10 números (valores separados por coma)">
+            <button onclick="imprimirArraySinQuinto()">Imprimir</button>
+        </section>
+    
+        <section id="sec8" class="Ejercicios">
+            <h2>8 - Crear una función que reciba un array de números y un número por parámetro e imprima por consola cada número del array multiplicado por el número pasado por parámetro.</h2>
+            <input type="text" id="array8" placeholder="Introduce un array de números (valores separados por coma)">
+            <input type="number" id="multiplicador" placeholder="Introduce un multiplicador">
+            <button onclick="multiplicarArray()">Multiplicar</button>
+        </section>
+    
+    </main>
+    <footer>
+        <div>
+            <h3>Santiago Maruottolo</h3>
+            <h4>E1: Condicionales, Ciclos y Funciones</h4>
+        </div>
+        <div>
+            <h4>Github</h4>
+            <a href="https://github.com/Santt-m/Js-E1-condicionales-ciclos-funciones" title="ir al repo de github">¡ clic aqui para ir al repo !</a>
+        </div>
+    </footer>
+</body>
+<script src="script.js" defer></script>
+</html>
